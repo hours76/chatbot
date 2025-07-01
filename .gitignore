@@ -10,10 +10,13 @@ models/en_US-amy-medium.onnx
 models/en_US-amy-medium.onnx.json
 models/zh_CN-huayan-medium.onnx
 models/zh_CN-huayan-medium.onnx.json
-__pycache__/audio.cpython-313.pyc
-__pycache__/chatbot.cpython-313.pyc
-__pycache__/config.cpython-313.pyc
-__pycache__/llm.cpython-313.pyc
-__pycache__/stt.cpython-313.pyc
-__pycache__/tts.cpython-313.pyc
-__pycache__/utils.cpython-313.pyc
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+
+# Piper TTS directory (large build files)
+piper/
