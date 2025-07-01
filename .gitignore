@@ -1,15 +1,6 @@
-chatbot.wav
-models/ggml-large-v3.bin
-models/ggml-base.bin
-models/ggml-base.en.bin
-models/ggml-medium.bin
-.DS_Store
-.vscode/
-.env
-models/en_US-amy-medium.onnx
-models/en_US-amy-medium.onnx.json
-models/zh_CN-huayan-medium.onnx
-models/zh_CN-huayan-medium.onnx.json
+# Project generated files
+*.wav
+
 # Python cache files
 __pycache__/
 *.pyc
@@ -17,10 +8,14 @@ __pycache__/
 
 # Virtual environment
 venv/
-env/
 
 # Environment variables
 .env
 
-# Piper TTS directory (large build files)
-piper/
+# Project dependencies (external)
+models/
+tools/
+
+# IDE and OS files
+.vscode/
+.DS_Store
