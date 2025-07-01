@@ -5,5 +5,22 @@ models/ggml-base.en.bin
 models/ggml-medium.bin
 .DS_Store
 .vscode/
-
 .env
+models/en_US-amy-medium.onnx
+models/en_US-amy-medium.onnx.json
+models/zh_CN-huayan-medium.onnx
+models/zh_CN-huayan-medium.onnx.json
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+venv/
+env/
+
+# Environment variables
+.env
+
+# Piper TTS directory (large build files)
+piper/
