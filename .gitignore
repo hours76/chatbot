@@ -6,3 +6,4 @@ models/ggml-medium.bin
 .DS_Store
 .vscode/
 
+.env
