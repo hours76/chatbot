@@ -13,16 +13,16 @@ DEVICE_INDEX = None  # Default device
 OUTFILE = "chatbot.wav"
 
 # === Model Settings ===
-script_dir = os.path.dirname(os.path.abspath(__file__))
-WHISPER_MODEL = os.path.join(script_dir, "models", "ggml-large-v3.bin")
+# Use environment variables or default paths outside the repository
+WHISPER_MODEL = os.environ.get('WHISPER_MODEL', '/Users/hrsung/Documents/work/ai/chatbot/models/ggml-large-v3.bin')
 OLLAMA_MODEL = "llama3"
 
 # === Piper TTS Settings ===
-PIPER_BIN = os.path.join(script_dir, "piper", "piper", "build", "piper")
-PIPER_MODEL_EN = os.path.join(script_dir, "models", "en_US-amy-medium.onnx")
-PIPER_MODEL_ZH = os.path.join(script_dir, "models", "zh_CN-huayan-medium.onnx")
+PIPER_BIN = os.environ.get('PIPER_BIN', '/Users/hrsung/Documents/work/ai/chatbot/tools/piper/piper/build/piper')
+PIPER_MODEL_EN = os.environ.get('PIPER_MODEL_EN', '/Users/hrsung/Documents/work/ai/chatbot/models/en_US-amy-medium.onnx')
+PIPER_MODEL_ZH = os.environ.get('PIPER_MODEL_ZH', '/Users/hrsung/Documents/work/ai/chatbot/models/zh_CN-huayan-medium.onnx')
 PIPER_SAMPLE_RATE = 22050
-PIPER_ESPEAK_DATA = "/Users/hrsung/.homebrew/share/espeak-ng-data"
+PIPER_ESPEAK_DATA = os.environ.get('PIPER_ESPEAK_DATA', '/Users/hrsung/.homebrew/share/espeak-ng-data')
 
 # === Debug Settings ===
 DEBUG_RECORDING = False
